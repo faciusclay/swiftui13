@@ -21,10 +21,22 @@ struct ContentView: View {
             //.clipped()
             .clipShape(Capsule())
             .opacity(0.9)
-        .overlay(Image(systemName: "heart.fill")
+        .overlay(
+            /*Image(systemName: "heart.fill")
             .font(.system(size:60))
             .foregroundColor(.pink)
-            .opacity(0.5))
+            .opacity(0.5))*/
+        Text("Este es solo un texto de prueba, solo es para seguir con el ejemplo del curso         y hacer una cadena larga")
+            .fontWeight(.bold)
+            .font(.system(.headline,
+                           design:.rounded))
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.gray)
+            .cornerRadius(10)
+            .opacity(0.7)
+            .padding()
+        )
             
     }
 }
