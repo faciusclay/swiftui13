@@ -13,46 +13,8 @@ struct ContentView: View {
         VStack {
             HeaderView()
             HStack {
-                VStack{
-                    Text("Básico")
-                        .font(.system(.title, design: .rounded))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                    
-                    Text("$250.00")
-                        .font(.system(size: 29, weight:.heavy,
-                                      design:.rounded))
-                        .foregroundColor(.white)
-                    
-                    Text("Un curso incluido")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                }
-                .frame(minWidth:0, maxWidth: .infinity, minHeight: 100)
-                .padding(30)
-                .background(Color.green)
-                .cornerRadius(10)
-                
-                
-                VStack{
-                    Text("Carrera")
-                        .font(.system(.title, design: .rounded))
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                    
-                    Text("$999.00")
-                        .font(.system(size: 29, weight:.heavy,
-                                      design:.rounded))
-                        .foregroundColor(.black)
-                    
-                    Text("Toda una carrera")
-                        .font(.headline)
-                        .foregroundColor(.black)
-                }
-                .frame(minWidth:0, maxWidth: .infinity, minHeight: 100)
-                .padding(30)
-                .background(Color(red: 230/255, green: 230/255, blue: 230/255))
-                .cornerRadius(10)
+                PricingView(title: "Básico", subTitle: "Un curso incluido", price: "$250.00", textColor: .white, backgroundColor: .green)
+                PricingView(title: "Carrera", subTitle: "Toda una carrera", price: "$999.00", textColor: .black, backgroundColor: Color(red: 230/255, green: 230/255, blue: 230/255))
             }.padding(.horizontal)
             
         }
@@ -75,5 +37,35 @@ struct HeaderView: View {
                 .font(.system(.largeTitle, design: .rounded))
                 .fontWeight(.black)
         }
+    }
+}
+
+struct PricingView: View {
+    
+    var title: String
+    var subTitle: String
+    var price: String
+    var textColor: Color
+    var backgroundColor: Color
+    
+    var body: some View {
+        VStack{
+            Text(title)
+                .font(.system(.title, design: .rounded))
+                .fontWeight(.bold)
+                .foregroundColor(textColor)
+            
+            Text(price)
+                .font(.system(size: 29, weight:.heavy, design:.rounded))
+                .foregroundColor(textColor)
+            
+            Text(subTitle)
+                .font(.headline)
+                .foregroundColor(textColor)
+        }
+        .frame(minWidth:0, maxWidth: .infinity, minHeight: 100)
+        .padding(30)
+        .background(backgroundColor)
+        .cornerRadius(10)
     }
 }
