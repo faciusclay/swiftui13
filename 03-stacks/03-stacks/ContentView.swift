@@ -12,9 +12,34 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HeaderView()
-            HStack {
+            
+            HStack(spacing: 8) {
                 PricingView(title: "Básico", subTitle: "Un curso incluido", price: "$250.00", textColor: .white, backgroundColor: .green)
-                PricingView(title: "Carrera", subTitle: "Toda una carrera", price: "$999.00", textColor: .black, backgroundColor: Color(red: 230/255, green: 230/255, blue: 230/255))
+                ZStack{
+                    PricingView(title: "Carrera", subTitle: "Toda una carrera", price: "$999.00", textColor: .black, backgroundColor: Color(red: 230/255, green: 230/255, blue: 230/255))
+                    
+                    Text("El mejor para empezar")
+                        .font(.system(.caption, design:.rounded))
+                        .foregroundColor(.white)
+                        .fontWeight(.black)
+                        .padding(10)
+                        .background(Color(red: 240/255, green: 180/255, blue: 50/255))
+                        .offset(x: 0, y:-85)
+                }
+            }.padding(.horizontal)
+            
+            HStack {
+                ZStack{
+                    PricingView(title: "Definitivo", subTitle: "Todos los cursos en línea", price: "$3,999.00", textColor: .white, backgroundColor: Color(red: 70/255, green: 70/255, blue: 70/255))
+                    
+                    Text("Conviértete en máster del universo")
+                        .font(.system(.caption, design:.rounded))
+                        .foregroundColor(.white)
+                        .fontWeight(.black)
+                        .padding(10)
+                        .background(Color(red: 240/255, green: 180/255, blue: 50/255))
+                        .offset(x: 0, y:-70)
+                }
             }.padding(.horizontal)
             
         }
