@@ -10,13 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 4){
-            Text("Elije tu itinerario")
-                .font(.system(.largeTitle, design: .rounded))
-                .fontWeight(.black)
-            Text("de aprendizaje")
-                .font(.system(.largeTitle, design: .rounded))
-                .fontWeight(.black)
+        VStack {
+            HeaderView()
         }
     }
 }
@@ -24,5 +19,18 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct HeaderView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4){
+            Text("Elije tu itinerario")
+                .font(.system(.largeTitle, design: .rounded))
+                .fontWeight(.black)
+            Text("de aprendizaje")
+                .font(.system(.largeTitle, design: .rounded))
+                .fontWeight(.black)
+        }
     }
 }
