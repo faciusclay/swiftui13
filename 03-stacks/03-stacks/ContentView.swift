@@ -28,19 +28,18 @@ struct ContentView: View {
                 }
             }.padding(.horizontal)
             
-            HStack {
-                ZStack{
-                    PricingView(title: "Definitivo", subTitle: "Todos los cursos en línea", price: "$3,999.00", textColor: .white, backgroundColor: Color(red: 70/255, green: 70/255, blue: 70/255))
-                    
-                    Text("Conviértete en máster del universo")
-                        .font(.system(.caption, design:.rounded))
-                        .foregroundColor(.white)
-                        .fontWeight(.black)
-                        .padding(10)
-                        .background(Color(red: 240/255, green: 180/255, blue: 50/255))
-                        .offset(x: 0, y:-70)
-                }
-            }.padding(.horizontal)
+            ZStack{
+                PricingView(title: "Definitivo", subTitle: "Todos los cursos", price: "$3,999.00", textColor: .white, backgroundColor: Color(red: 50/255, green: 50/255, blue: 50/255))
+                .padding(.horizontal)
+                
+                Text("Conviértete en master del universo")
+                .font(.system(.caption, design:.rounded))
+                .foregroundColor(.white)
+                .fontWeight(.black)
+                .padding(10)
+                .background(Color(red: 240/255, green: 180/255, blue: 50/255))
+                .offset(x: 0, y:-70)
+            }
             
         }
     }
