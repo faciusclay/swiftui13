@@ -26,7 +26,7 @@ struct ContentView: View {
             .font(.system(size:60))
             .foregroundColor(.pink)
             .opacity(0.5))*/
-        Text("Este es solo un texto de prueba, solo es para seguir con el ejemplo del curso         y hacer una cadena larga")
+        /*Text("Este es solo un texto de prueba, solo es para seguir con el ejemplo del curso         y hacer una cadena larga")
             .fontWeight(.bold)
             .font(.system(.headline,
                            design:.rounded))
@@ -35,7 +35,17 @@ struct ContentView: View {
             .background(Color.gray)
             .cornerRadius(10)
             .opacity(0.7)
-            .padding()
+            .padding(),
+        alignment: .bottom*/
+            Capsule()
+                .foregroundColor(.black)
+                .opacity(0.5).overlay(
+                    Text("Faro")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .frame(width: 250)
+                )
         )
             
     }
