@@ -24,12 +24,12 @@ struct ContentView: View {
                         .fontWeight(.black)
                         .padding(10)
                         .background(Color(red: 240/255, green: 180/255, blue: 50/255))
-                        .offset(x: 0, y:-85)
+                        .offset(x: 0, y:-88)
                 }
             }.padding(.horizontal)
             
             ZStack{
-                PricingView(title: "Definitivo", subTitle: "Todos los cursos", price: "$3,999.00", textColor: .white, backgroundColor: Color(red: 50/255, green: 50/255, blue: 50/255))
+                PricingView(title: "Definitivo", subTitle: "Todos los cursos", price: "$3,999.00", textColor: .white, backgroundColor: Color(red: 50/255, green: 50/255, blue: 50/255), icon: "lightbulb")
                 .padding(.horizontal)
                 
                 Text("Conviértete en master del universo")
@@ -38,7 +38,7 @@ struct ContentView: View {
                 .fontWeight(.black)
                 .padding(10)
                 .background(Color(red: 240/255, green: 180/255, blue: 50/255))
-                .offset(x: 0, y:-70)
+                .offset(x: 0, y:-88)
             }
             
         }
@@ -71,9 +71,17 @@ struct PricingView: View {
     var price: String
     var textColor: Color
     var backgroundColor: Color
+    var icon: String?
     
     var body: some View {
         VStack{
+            
+            icon.map({
+                Image(systemName:$0) //$0 = icon
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+            })
+            
             Text(title)
                 .font(.system(.title, design: .rounded))
                 .fontWeight(.bold)
