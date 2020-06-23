@@ -29,7 +29,7 @@ struct ContentView: View {
             }.padding(.horizontal)
             
             ZStack{
-                PricingView(title: "Definitivo", subTitle: "Todos los cursos", price: "$3,999.00", textColor: .white, backgroundColor: Color(red: 50/255, green: 50/255, blue: 50/255), icon: "lightbulb")
+                PricingView(title: "Definitivo", subTitle: "Todos los cursos", price: "$2,999.00", textColor: .white, backgroundColor: Color(red: 50/255, green: 50/255, blue: 50/255), icon: "lightbulb")
                 .padding(.horizontal)
                 
                 Text("Conviértete en master del universo")
@@ -39,8 +39,8 @@ struct ContentView: View {
                 .padding(10)
                 .background(Color(red: 240/255, green: 180/255, blue: 50/255))
                 .offset(x: 0, y:-88)
-            }
-            
+            }.padding(8)
+            Spacer()
         }
     }
 }
@@ -53,14 +53,18 @@ struct ContentView_Previews: PreviewProvider {
 
 struct HeaderView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 4){
-            Text("Elije tu itinerario")
-                .font(.system(.largeTitle, design: .rounded))
-                .fontWeight(.black)
-            Text("de aprendizaje")
-                .font(.system(.largeTitle, design: .rounded))
-                .fontWeight(.black)
-        }
+        HStack {
+            VStack(alignment: .leading, spacing: 4){
+                Text("Elije tu itinerario")
+                    .font(.system(.largeTitle, design: .rounded))
+                    .fontWeight(.black)
+                Text("de aprendizaje")
+                    .font(.system(.largeTitle, design: .rounded))
+                    .fontWeight(.black)
+            }
+            Spacer()
+        }.padding()
+        
     }
 }
 
