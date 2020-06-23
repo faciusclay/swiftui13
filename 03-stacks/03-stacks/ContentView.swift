@@ -13,8 +13,9 @@ struct ContentView: View {
         VStack {
             HeaderView()
             
-            HStack(spacing: 8) {
+            ZStack{
                 PricingView(title: "Básico", subTitle: "Un curso incluido", price: "$250.00", textColor: .white, backgroundColor: .green)
+            
                 ZStack{
                     PricingView(title: "Carrera", subTitle: "Toda una carrera", price: "$999.00", textColor: .black, backgroundColor: Color(red: 230/255, green: 230/255, blue: 230/255))
                     
@@ -25,12 +26,10 @@ struct ContentView: View {
                         .padding(10)
                         .background(Color(red: 240/255, green: 180/255, blue: 50/255))
                         .offset(x: 0, y:-88)
-                }
-            }.padding(.horizontal)
-            
-            ZStack{
+                }.offset(x:0, y:100)
+                
+                ZStack{
                 PricingView(title: "Definitivo", subTitle: "Todos los cursos", price: "$2,999.00", textColor: .white, backgroundColor: Color(red: 50/255, green: 50/255, blue: 50/255), icon: "lightbulb")
-                .padding(.horizontal)
                 
                 Text("Conviértete en master del universo")
                 .font(.system(.caption, design:.rounded))
@@ -39,7 +38,8 @@ struct ContentView: View {
                 .padding(10)
                 .background(Color(red: 240/255, green: 180/255, blue: 50/255))
                 .offset(x: 0, y:-88)
-            }.padding(8)
+                }.offset(x:0, y:200)
+            }.padding()
             Spacer()
         }
     }
