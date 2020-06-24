@@ -27,7 +27,7 @@ struct CardView: View {
                         .font(.headline)
                         .foregroundColor(.secondary)
                     Text(courseTitle.uppercased())
-                        .font(.title)
+                        .font(.body)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
                         .lineLimit(3)
