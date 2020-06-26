@@ -10,15 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var isPlaying = false
+    //@State private var isPlaying = false
+    @State private var number = 0
     
     var body: some View {
         Button(action: {
-            self.isPlaying.toggle()
+            //self.isPlaying.toggle()
+            self.number += 1
         }) {
-            Image(systemName: isPlaying ? "stop.circle" : "play.circle")
+            /*Image(systemName: isPlaying ? "stop.circle" : "play.circle")
                 .font(.system(size:100))
-                .foregroundColor(isPlaying ? .red : .blue)
+                .foregroundColor(isPlaying ? .red : .blue) */
+            Text(String(self.number))
+                .font(.system(size: 50))
         }
     }
 }
