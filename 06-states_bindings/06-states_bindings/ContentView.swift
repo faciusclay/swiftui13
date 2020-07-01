@@ -10,14 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State private var numClicks = 0
+    @State private var numClicksPurple = 0
+    @State private var numClicksYellow = 0
+    @State private var numClicksGreen = 0
     
     var body: some View {
         
         VStack{
-            CounterView(numClicks: $numClicks, buttonColor: .purple)
-            CounterView(numClicks: $numClicks, buttonColor: .yellow)
-            CounterView(numClicks: $numClicks, buttonColor: .green)
+            Text(String(numClicksPurple+numClicksYellow+numClicksGreen))
+                .font(.system(size: 80, weight: .bold, design: .rounded))
+            
+            CounterView(numClicks: $numClicksPurple, buttonColor: .purple)
+            CounterView(numClicks: $numClicksYellow, buttonColor: .yellow)
+            CounterView(numClicks: $numClicksGreen, buttonColor: .green)
         }
     }
 }
