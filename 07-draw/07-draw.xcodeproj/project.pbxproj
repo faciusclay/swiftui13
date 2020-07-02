@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E927181F24AE5B0100B9B157 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E927181E24AE5B0100B9B157 /* ProgressIndicator.swift */; };
+		E927182124AE6DAC00B9B157 /* DonutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E927182024AE6DAC00B9B157 /* DonutView.swift */; };
 		E96512C424AD47DA0004CEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96512C324AD47DA0004CEE4 /* AppDelegate.swift */; };
 		E96512C624AD47DA0004CEE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96512C524AD47DA0004CEE4 /* SceneDelegate.swift */; };
 		E96512C824AD47DA0004CEE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96512C724AD47DA0004CEE4 /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		E927181E24AE5B0100B9B157 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		E927182024AE6DAC00B9B157 /* DonutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutView.swift; sourceTree = "<group>"; };
 		E96512C024AD47DA0004CEE4 /* 07-draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-draw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96512C324AD47DA0004CEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E96512C524AD47DA0004CEE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				E96512D124AD47E30004CEE4 /* Info.plist */,
 				E96512CB24AD47E30004CEE4 /* Preview Content */,
 				E927181E24AE5B0100B9B157 /* ProgressIndicator.swift */,
+				E927182024AE6DAC00B9B157 /* DonutView.swift */,
 			);
 			path = "07-draw";
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				E96512D824AD4E590004CEE4 /* CurveView.swift in Sources */,
 				E96512C824AD47DA0004CEE4 /* ContentView.swift in Sources */,
 				E927181F24AE5B0100B9B157 /* ProgressIndicator.swift in Sources */,
+				E927182124AE6DAC00B9B157 /* DonutView.swift in Sources */,
 				E96512DA24AD5C200004CEE4 /* PieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
