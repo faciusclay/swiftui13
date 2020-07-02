@@ -14,6 +14,7 @@
 		E96512CD24AD47E30004CEE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96512CC24AD47E30004CEE4 /* Preview Assets.xcassets */; };
 		E96512D024AD47E30004CEE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96512CE24AD47E30004CEE4 /* LaunchScreen.storyboard */; };
 		E96512D824AD4E590004CEE4 /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96512D724AD4E590004CEE4 /* CurveView.swift */; };
+		E96512DA24AD5C200004CEE4 /* PieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96512D924AD5C200004CEE4 /* PieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E96512CF24AD47E30004CEE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E96512D124AD47E30004CEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E96512D724AD4E590004CEE4 /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
+		E96512D924AD5C200004CEE4 /* PieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				E96512C524AD47DA0004CEE4 /* SceneDelegate.swift */,
 				E96512D724AD4E590004CEE4 /* CurveView.swift */,
 				E96512C724AD47DA0004CEE4 /* ContentView.swift */,
+				E96512D924AD5C200004CEE4 /* PieView.swift */,
 				E96512C924AD47E30004CEE4 /* Assets.xcassets */,
 				E96512CE24AD47E30004CEE4 /* LaunchScreen.storyboard */,
 				E96512D124AD47E30004CEE4 /* Info.plist */,
@@ -153,6 +156,7 @@
 				E96512C624AD47DA0004CEE4 /* SceneDelegate.swift in Sources */,
 				E96512D824AD4E590004CEE4 /* CurveView.swift in Sources */,
 				E96512C824AD47DA0004CEE4 /* ContentView.swift in Sources */,
+				E96512DA24AD5C200004CEE4 /* PieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
