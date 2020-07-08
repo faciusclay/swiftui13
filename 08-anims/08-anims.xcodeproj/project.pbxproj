@@ -13,6 +13,7 @@
 		E9078BEC24B54BC7001829A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9078BEB24B54BC7001829A3 /* Assets.xcassets */; };
 		E9078BEF24B54BC7001829A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9078BEE24B54BC7001829A3 /* Preview Assets.xcassets */; };
 		E9078BF224B54BC7001829A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9078BF024B54BC7001829A3 /* LaunchScreen.storyboard */; };
+		E98B96EA24B63E53006ECB8A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98B96E924B63E53006ECB8A /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E9078BEE24B54BC7001829A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9078BF124B54BC7001829A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9078BF324B54BC7001829A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98B96E924B63E53006ECB8A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E9078BF024B54BC7001829A3 /* LaunchScreen.storyboard */,
 				E9078BF324B54BC7001829A3 /* Info.plist */,
 				E9078BED24B54BC7001829A3 /* Preview Content */,
+				E98B96E924B63E53006ECB8A /* LoadingView.swift */,
 			);
 			path = "08-anims";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9078BE624B54BC1001829A3 /* AppDelegate.swift in Sources */,
+				E98B96EA24B63E53006ECB8A /* LoadingView.swift in Sources */,
 				E9078BE824B54BC1001829A3 /* SceneDelegate.swift in Sources */,
 				E9078BEA24B54BC1001829A3 /* ContentView.swift in Sources */,
 			);
