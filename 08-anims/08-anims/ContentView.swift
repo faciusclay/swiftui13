@@ -9,8 +9,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var buttonColorChanged = false
+    @State private var iconColorChanged = false
+    @State private var iconSizeChanged = false
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack{
+            Circle()
+                .frame(width: 180, height: 180)
+                .foregroundColor(buttonColorChanged ? Color(.systemGray6) : .green)
+                //.animation(.default)
+            
+            Image(systemName: "keyboard")
+                .font(.system(size: 80))
+                .foregroundColor(iconColorChanged ? .green : Color(.systemGray6))
+                .scaleEffect(iconSizeChanged ? 1.0 : 0.5)
+                //.animation(.default)
+            
+        }
+        .animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5))
+        .onTapGesture {
+            self.buttonColorChanged.toggle()
+            self.iconColorChanged.toggle()
+            self.iconSizeChanged.toggle()
+        }
     }
 }
 
