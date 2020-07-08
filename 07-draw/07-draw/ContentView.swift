@@ -21,6 +21,7 @@ struct ContentView: View {
             VStack {
                 ProgressBar(progress: self.$progressValue)
                     .padding(40)
+                    .animation(.default)
                 
                 Button(action: {
                     self.incrementProgress()
@@ -85,7 +86,7 @@ struct ProgressBar: View {
                 .frame(width: 200, height: 200)
                 .overlay(VStack{
                     Text(String(format: "%.0f %%", min(self.progress, 1.0)*100.0))
-                        .font(.system(size:60, weight:.bold, design: .rounded))
+                        .font(.system(size:50, weight:.bold, design: .rounded))
                     Text("Porcentaje")
                         .font(.system(.body, design: .rounded))
                         .bold().foregroundColor(Color(.darkGray))
