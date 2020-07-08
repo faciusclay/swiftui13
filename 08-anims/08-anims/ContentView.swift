@@ -28,11 +28,14 @@ struct ContentView: View {
                 //.animation(.default)
             
         }
-        .animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5))
+        //.animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0.5))
         .onTapGesture {
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.4, blendDuration: 0.9)){
+                self.iconColorChanged.toggle()
+                self.iconSizeChanged.toggle()
+            }
             self.buttonColorChanged.toggle()
-            self.iconColorChanged.toggle()
-            self.iconSizeChanged.toggle()
+            
         }
     }
 }
