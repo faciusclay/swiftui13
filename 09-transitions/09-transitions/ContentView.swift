@@ -33,7 +33,7 @@ struct ContentView: View {
                         .font(.system(.largeTitle, design:.rounded))
                         .bold()
                         .foregroundColor(.white)
-                ).transition(AnyTransition.offset(x: -700, y: 0).combined(with: .scale).combined(with: .opacity))
+                ).transition(.offsetScaledOpacityOut)
             }
         }
         .onTapGesture {
@@ -47,5 +47,13 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+extension AnyTransition{
+    static var offsetScaledOpacityOut: AnyTransition{
+        AnyTransition.offset(x: -700, y: 0)
+            .combined(with: .scale)
+            .combined(with: .opacity)
     }
 }
